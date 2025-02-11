@@ -152,12 +152,12 @@ LOGIN_REDIRECT_URL = 'library:books_list'
 
 LOGIN_URL = 'users:login'
 
-CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.redis.RedisCache',
-        'LOCATION': 'redis://localhost:6379/1',
-    }
-}
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'django.core.cache.backends.redis.RedisCache',
+#         'LOCATION': 'redis://localhost:6379/1',
+#     }
+# }
 
 if "test" in sys.argv:
     DATABASES = {
